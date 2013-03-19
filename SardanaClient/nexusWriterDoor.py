@@ -275,7 +275,7 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
         self.prepareFileName(dataRecord)
         self.findScanLimits( dataRecord)
         if PYQT:
-            self.emitter.emit(SIGNAL("updateNP(int,int)"), self.indexScan, self.np)
+            self.emitter.emit(SIGNAL("updateNP(int,int)"), self.indexScan, self.np+1)
 
         try:
             xml = self.createNexusConfiguration(dataRecord)
@@ -358,7 +358,7 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
 
                 self.indexScan += 1
                 if PYQT:
-                    self.emitter.emit(SIGNAL("updateNP(int,int)"), self.indexScan, self.np)
+                    self.emitter.emit(SIGNAL("updateNP(int,int)"), self.indexScan, self.np+1)
 
             return dataRecord
 
