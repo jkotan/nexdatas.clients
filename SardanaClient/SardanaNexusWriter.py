@@ -36,7 +36,7 @@ def signal_handler(signal, frame):
     else:
         shall = True
     if shall:    
-        print '\nBye !'
+        print '\b\bBye !'
         sys.exit(0)
 
 def getFinished(door):
