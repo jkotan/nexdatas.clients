@@ -330,15 +330,16 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
         if "type" in dataRecord[1] and dataRecord[1]['type'] == "data_desc":
             finished = False if self.getEnvironment('ScanFinished').upper() == "FALSE" else True
 
-            if finished:
-                self.setEnvironment('ScanFinished', 'False')
-                self.writing = True
-                print "Writing NeXus: INIT"
-                self.prepareNewScan(dataRecord)
+            if not finished:
+                self.closeScan(dataRecord)
+            self.setEnvironment('ScanFinished', 'False')
+            self.writing = True
+            print "Writing NeXus: INIT"
+            self.prepareNewScan(dataRecord)
             return dataRecord
 
 
-        # end of the scan
+        # end of the scan2
         if "type" in dataRecord[1] and dataRecord[1]['type'] == "record_end":
             if self.writing:
                 print "Writing NeXus: FINAL"
