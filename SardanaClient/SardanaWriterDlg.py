@@ -58,7 +58,8 @@ class SardanaWriterDlg(QDialog, Ui_SardanaWriterDlg):
     ## updates the configuration server device name
     def updateNP(self, iscan, np):
         self.ofLabel.setText("Step: %s of %s" %  (iscan, np)) 
-
+        if np:
+            self.progressBar.setValue(float(iscan)*100/np)  
 
 if __name__ == "__main__":
     import sys
