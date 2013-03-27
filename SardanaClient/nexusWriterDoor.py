@@ -28,6 +28,11 @@ import taurus.core.tango.sardana.macroserver
 import pprint
 import json
 
+from datetime import datetime
+from pytz import timezone
+import pytz
+
+
 PYQT = True
 try:
     from PyQt4.QtCore import QObject, SIGNAL, QString
@@ -258,10 +263,23 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
         
         print "opening the H5 file"
         self.nexusWriter.OpenFile()
+
+        amsterdam = timezone('Europe/Amsterdam')
+        fmt = '%Y-%m-%dT%H:%M:%S.%f%z'
+        starttime = amsterdam.localize(datetime.now())
+
+        theString = '{"data": {'\
+            +' "sample_name":"test sample 1",'\
+            +' "start_time":"'+  str(starttime.strftime(fmt)) + '"' \
+            +'}  }'
+#                +' "start_time":"2012-11-14T14:05:23.2344-0200"' \
+
         
         self.nexusWriter.TheXMLSettings=xml
 
-        self.nexusWriter.TheJSONRecord='{}'
+
+
+        self.nexusWriter.TheJSONRecord = theString
         print "opening the entry"
         self.nexusWriter.OpenEntry()
 
@@ -295,7 +313,20 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
     def closeScan(self, dataRecord):
         # close the H5 file
         # optional JSON attribute
-        self.nexusWriter.TheJSONRecord='{}'
+
+
+        amsterdam = timezone('Europe/Amsterdam')
+        fmt = '%Y-%m-%dT%H:%M:%S.%f%z'
+        endtime = amsterdam.localize(datetime.now())
+
+
+        theString = '{"data": {'\
+            +' "end_time":"'+  str(endtime.strftime(fmt)) + '"' \
+            +'}  }'
+        
+
+
+        self.nexusWriter.TheJSONRecord = theString
         print "closing the entry"
         self.nexusWriter.CloseEntry()
         print "closing the H5 file"
