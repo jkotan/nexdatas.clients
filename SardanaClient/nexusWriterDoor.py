@@ -279,10 +279,15 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
 
         try:
             xml = self.createNexusConfiguration(dataRecord)
+        except:
+            self.writing = False
+            raise
+        try:
             self.initNexusWriter(xml)
         except:
             self.writing = False
-            raise Exception,"Configuration cannot be performed. Abort writing"
+#            raise Exception,"Configuration cannot be performed. Abort writing"
+            raise
         
 
     ## performs the FINAL mode writing and closes the Nexus file
