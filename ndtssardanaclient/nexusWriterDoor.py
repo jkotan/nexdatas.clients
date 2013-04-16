@@ -248,6 +248,7 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
 
         self.nexusWriter=PyTango.DeviceProxy(self.device)
 
+        print "NW", self.nexusWriter
         if PYQT:
             self.emitter.emit(SIGNAL("updateNWriter(QString)"), QString(self.device))
 

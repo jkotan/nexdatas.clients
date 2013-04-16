@@ -123,6 +123,7 @@ if __name__ == "__main__":
     from PyQt4.QtGui import QApplication
     from SardanaWriterDlg import SardanaWriterDlg
 
+
     finished = getFinished(door)
     if options.widget:
         from PyQt4.QtCore import (SIGNAL, QString)
@@ -130,6 +131,7 @@ if __name__ == "__main__":
         app = QApplication(sys.argv)
         ## dialog form
         form = SardanaWriterDlg()
+
         form.createGUI()
         form.update()
 #        print "WW", door.emitter
