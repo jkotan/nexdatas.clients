@@ -15,11 +15,11 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with nexdatas.  If not, see <http://www.gnu.org/licenses/>.
-## \package sardanaclient nexdatas
+## \package ndts ndtssardanaclient 
 ## \file SardanaWriterDlg.py
 # Dialog class for Sardana Writer Client
 
-from PyQt4.QtCore import (SIGNAL, QString)
+from PyQt4.QtCore import (SIGNAL, QString, QSettings, QVariant)
 from PyQt4.QtGui import (QMessageBox,QDialog)
 from ui_sardanawriterdlg import  Ui_SardanaWriterDlg
 
@@ -40,6 +40,15 @@ class SardanaWriterDlg(QDialog, Ui_SardanaWriterDlg):
         self.setupUi(self)
 
         self.connect(self.closePushButton, SIGNAL("clicked()"), self.accept)     
+        settings = QSettings()
+        self.restoreGeometry(settings.value("MainWindow/Geometry").toByteArray())
+
+    ## stores the setting before finishing the application 
+    # \param event Qt event   
+    def closeEvent(self, event):
+        settings = QSettings()
+        settings.setValue("MainWindow/Geometry", QVariant(self.saveGeometry()))
+
         
     ## updates the file name     
     def updateFile(self,fname):
