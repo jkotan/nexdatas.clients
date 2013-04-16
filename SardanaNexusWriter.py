@@ -10,13 +10,12 @@ import os
 import time
 import signal
 import taurus
-#from taurus.qt.qtgui.application import TaurusApplication 
 
 from optparse import OptionParser
 import PyTango
 import Hasylab
 
-from nexusWriterDoor import nexusDoor
+from ndtssardanaclient.nexusWriterDoor import nexusDoor
 
 
 ## finished flag
@@ -106,7 +105,6 @@ if __name__ == "__main__":
             sys.argv.pop(i)
         i += 1 
 
-#    print "SYS2", sys.argv
 #    app = TaurusApplication(sys.argv)
 
     try: 
@@ -121,8 +119,7 @@ if __name__ == "__main__":
 
     import sys
     from PyQt4.QtGui import QApplication
-    from SardanaWriterDlg import SardanaWriterDlg
-
+    from ndtssardanaclient.SardanaWriterDlg import SardanaWriterDlg
 
     finished = getFinished(door)
     if options.widget:
@@ -131,10 +128,8 @@ if __name__ == "__main__":
         app = QApplication(sys.argv)
         ## dialog form
         form = SardanaWriterDlg()
-
         form.createGUI()
         form.update()
-#        print "WW", door.emitter
         form.connect(door.emitter, SIGNAL("updateFile(QString)"), form.updateFile)     
         form.connect(door.emitter, SIGNAL("updateNWriter(QString)"), form.updateNWriter)     
         form.connect(door.emitter, SIGNAL("updateCServer(QString)"), form.updateCServer)     
@@ -146,7 +141,6 @@ if __name__ == "__main__":
         while not finished:
             finished = getFinished(door)
             time.sleep(1)
-#            print "FINISHED", finished
 
     else:
     
