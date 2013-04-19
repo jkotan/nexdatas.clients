@@ -239,7 +239,7 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
          
         self.cnfServer.CreateConfiguration(cpReq.keys())
         cnfxml = self.cnfServer.XMLString
-        self.cnfServer.Close()
+#        self.cnfServer.Close()
         return cnfxml
 
     ## inits Nexus Writer
