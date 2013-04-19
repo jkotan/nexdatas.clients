@@ -38,6 +38,8 @@ def signal_handler(signal, frame):
         print '\b\bBye !'
         sys.exit(0)
 
+## provides ScanFinished environment variable
+# \param door door device
 def getFinished(door):
     env = door.getEnvironment()
     return False if str(door.getEnvironment('ScanFinished')).upper() == 'FALSE' else True

@@ -96,7 +96,8 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
         else:
             self.emitter = None
     
-
+        ##  component selection mode     
+        self.__ccmode = 'SARDANA_MODE'
 
         env = self.getEnvironment()
         if not env.has_key('NexusWriterDevice'):
@@ -189,6 +190,14 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
     def createNexusConfiguration(self, dataRecord):
         self.deviceAliases = {}
         self.toReplace = {}
+        
+        
+        env = self.getEnvironment()
+        if env.has_key('SelectionMode'):
+            self.__ccmode = self.getEnvironment('SelectionMode') 
+
+
+
         for elm in dataRecord[1]['data'][ 'counters']:
             alias = self.get_alias(str(elm))
             self.deviceAliases[alias] = elm
@@ -212,31 +221,41 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
         dsFound = {}
         cpReq = {}
         self.cnfServer = PyTango.DeviceProxy(self.cnfdevice)
-
+        if not self.cnfServer or not  hasattr(self.cnfServer,"State"):
+            raise Exception, "Configuration server not accessible"
+        print "CS", self.cnfServer
+        print "CS2", self.cnfServer.State()
+        
         if PYQT:
             self.emitter.emit(SIGNAL("updateCServer(QString)"), QString(self.cnfdevice))
 
         if self.cnfServer.State() == PyTango.DevState.ON:
             self.cnfServer.Open()
-            
-        cmps = self.cnfServer.AvailableComponents()
-        for cp in cmps:
-            dss = self.cnfServer.ComponentDataSources(cp)
-            for ds in dss:
-                if ds in self.cutDeviceAliases.values():
 
-                    print ds, "found in ", cp
-                    if ds not in dsFound.keys():
-                        dsFound[ds]=[]
-                    dsFound[ds].append(cp)    
-                    if cp not in cpReq.keys():
-                        cpReq[cp]=[]
-                    cpReq[cp].append(ds)    
+        if self.__ccmode == 'SARDANA_MODE':    
+            cmps = self.cnfServer.AvailableComponents()
+            for cp in cmps:
+                dss = self.cnfServer.ComponentDataSources(cp)
+                for ds in dss:
+                    if ds in self.cutDeviceAliases.values():
+                        
+                        print ds, "found in ", cp
+                        if ds not in dsFound.keys():
+                            dsFound[ds]=[]
+                        dsFound[ds].append(cp)    
+                        if cp not in cpReq.keys():
+                            cpReq[cp]=[]
+                        cpReq[cp].append(ds)    
 
-        for ds in self.cutDeviceAliases.values():
-            if ds not in dsFound.keys():
-                print "Warning:", ds, "not found!"
-         
+            for ds in self.cutDeviceAliases.values():
+                if ds not in dsFound.keys():
+                    print "Warning:", ds, "not found!"
+
+        mandatory = self.cnfServer.MandatoryComponents()                   
+        print "Default Components", mandatory
+        print "Sardana Components",cpReq.keys()       
+        if not mandatory and not cpReq.keys():
+            raise Exception, "None of the components selected" 
         self.cnfServer.CreateConfiguration(cpReq.keys())
         cnfxml = self.cnfServer.XMLString
 #        self.cnfServer.Close()
@@ -247,8 +266,9 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
     def initNexusWriter(self, xml):
 
         self.nexusWriter=PyTango.DeviceProxy(self.device)
+        if not self.nexusWriter or not hasattr(self.nexusWriter,'State'):
+            raise Exception, "Tango Data Server not accessible"
 
-        print "NW", self.nexusWriter
         if PYQT:
             self.emitter.emit(SIGNAL("updateNWriter(QString)"), QString(self.device))
 
@@ -300,11 +320,13 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
             xml = self.createNexusConfiguration(dataRecord)
         except:
             self.writing = False
+            print sys.exc_info()[0]
             raise
         try:
             self.initNexusWriter(xml)
         except:
             self.writing = False
+            print sys.exc_info()[0]
 #            raise Exception,"Configuration cannot be performed. Abort writing"
             raise
         
