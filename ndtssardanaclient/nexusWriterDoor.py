@@ -223,8 +223,6 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
         self.cnfServer = PyTango.DeviceProxy(self.cnfdevice)
         if not self.cnfServer or not  hasattr(self.cnfServer,"State"):
             raise Exception, "Configuration server not accessible"
-        print "CS", self.cnfServer
-        print "CS2", self.cnfServer.State()
         
         if PYQT:
             self.emitter.emit(SIGNAL("updateCServer(QString)"), QString(self.cnfdevice))
@@ -258,7 +256,6 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
             raise Exception, "None of the components selected" 
         self.cnfServer.CreateConfiguration(cpReq.keys())
         cnfxml = self.cnfServer.XMLString
-#        self.cnfServer.Close()
         return cnfxml
 
     ## inits Nexus Writer
