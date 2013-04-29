@@ -227,8 +227,9 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
         if PYQT:
             self.emitter.emit(SIGNAL("updateCServer(QString)"), QString(self.cnfdevice))
 
-        if self.cnfServer.State() == PyTango.DevState.ON:
-            self.cnfServer.Open()
+            #         self.cnfServer.State() == PyTango.DevState.RUNNING:
+            #            self.cnfServer.Init()
+        self.cnfServer.Open()
 
         if self.__ccmode == 'SARDANA_MODE':    
             cmps = self.cnfServer.AvailableComponents()
