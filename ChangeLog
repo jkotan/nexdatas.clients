@@ -1,4 +1,8 @@
 2013-04-26 Jan Kotanski <jankotan@gmail.com>
+	* reopen connection into XMLConfigServer by default
+	* tagged as v1.0.2
+
+2013-04-26 Jan Kotanski <jankotan@gmail.com>
 	* adding SelectionMode
 	* tagged as v1.0.1
 
