@@ -45,7 +45,6 @@ def getFinished(door):
     return False if str(door.getEnvironment('ScanFinished')).upper() == 'FALSE' else True
 
 
-
 if __name__ == "__main__":
     ## door factory
     factory = taurus.Factory()
@@ -140,9 +139,7 @@ if __name__ == "__main__":
         app.exec_()
  
         finished = getFinished(door)
-        while not finished:
-            finished = getFinished(door)
-            time.sleep(1)
+
 
     else:
     
@@ -151,3 +148,5 @@ if __name__ == "__main__":
             finished = getFinished(door)
             
             time.sleep(1)
+
+

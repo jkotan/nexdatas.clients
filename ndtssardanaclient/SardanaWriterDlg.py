@@ -20,7 +20,7 @@
 # Dialog class for Sardana Writer Client
 
 from PyQt4.QtCore import (SIGNAL, QString, QSettings, QVariant)
-from PyQt4.QtGui import (QMessageBox,QDialog)
+from PyQt4.QtGui import (QMessageBox, QDialog)
 from ui_sardanawriterdlg import  Ui_SardanaWriterDlg
 
 
@@ -39,9 +39,18 @@ class SardanaWriterDlg(QDialog, Ui_SardanaWriterDlg):
     def createGUI(self):
         self.setupUi(self)
 
-        self.connect(self.closePushButton, SIGNAL("clicked()"), self.accept)     
+        self.connect(self.closePushButton, SIGNAL("clicked()"), self.closeWidget)     
         settings = QSettings()
         self.restoreGeometry(settings.value("MainWindow/Geometry").toByteArray())
+
+    ## closes the widget
+    def closeWidget(self):    
+        if QMessageBox.question(self, "Close Sardana Writer",
+                                "Would you like to close the writer ?", 
+                                QMessageBox.Yes | QMessageBox.No) == QMessageBox.No :
+            return
+        self.accept()
+
 
     ## stores the setting before finishing the application 
     # \param event Qt event   
@@ -49,7 +58,6 @@ class SardanaWriterDlg(QDialog, Ui_SardanaWriterDlg):
         settings = QSettings()
         settings.setValue("MainWindow/Geometry", QVariant(self.saveGeometry()))
 
-        
     ## updates the file name     
     def updateFile(self,fname):
         self.fileLabel.setText("File: %s" % fname) 
