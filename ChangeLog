@@ -1,5 +1,6 @@
 2013-04-26 Jan Kotanski <jankotan@gmail.com>
-	* reopen connection into XMLConfigServer by default
+	* reopening connection into XMLConfigServer by default
+	* adding question on exit
 	* tagged as v1.0.2
 
 2013-04-26 Jan Kotanski <jankotan@gmail.com>
