@@ -49,7 +49,8 @@ def main():
 
     # Create a TDW object
     ## instance of TangoDataWriter
-    tdw = TDW.TangoDataWriter("test.h5")
+    tdw = TDW.TangoDataWriter()
+    tdw.fileName = "test.h5"
 
     tdw.numThreads = 1
 

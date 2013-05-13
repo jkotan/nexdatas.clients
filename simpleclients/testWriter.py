@@ -66,7 +66,8 @@ def main(i):
     print "########################################"
 
 
-    tdw = TDW.TangoDataWriter("test.h5")
+    tdw = TDW.TangoDataWriter()
+    tdw.fileName = "test.h5"
     tdw.numThreads = 1
 
     tdw.fileName = fname
