@@ -202,7 +202,6 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
             alias = self.get_alias(str(elm))
             self.deviceAliases[alias] = elm
         for elm in dataRecord[1]['data']['column_desc']:
-            desc = dataRecord[1]['data']['column_desc']
             if "name" in elm.keys():
                 alias = self.get_alias(str(elm["name"]))
                 self.deviceAliases[alias] = elm["name"] 
