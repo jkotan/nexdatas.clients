@@ -64,8 +64,8 @@ def main():
             print "opening the H5 file"
             dpx.OpenFile()
 
-            dpx.TheXMLSettings = xml
-            dpx.TheJSONRecord = '{"decoders":{"MLIMA":"ndts.DecoderPool.VDEOdecoder"}}'
+            dpx.XMLSettings = xml
+            dpx.JSONRecord = '{"decoders":{"MLIMA":"ndts.DecoderPool.VDEOdecoder"}}'
 
             print "opening the entry"
             dpx.OpenEntry()

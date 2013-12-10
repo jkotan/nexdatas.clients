@@ -80,14 +80,14 @@ def main():
             starttime = amsterdam.localize(datetime.now())
 
 
-            dpx.TheXMLSettings = xml
+            dpx.XMLSettings = xml
             theString = '{"data": {'\
                 +' "sample_name":"test sample 1",'\
                 +' "start_time":"'+  str(starttime.strftime(fmt)) + '"' \
                 +'}  }'
                 #                +' "start_time":"2012-11-14T14:05:23.2344-0200"' \
   
-            dpx.TheJSONRecord =theString 
+            dpx.JSONRecord =theString 
 
             print "opening the entry"
             dpx.OpenEntry()
@@ -112,7 +112,7 @@ def main():
 
 #                +' "end_time":"2012-11-14T17:15:23.4567-0200" '\
  
-            dpx.TheJSONRecord =theString 
+            dpx.JSONRecord =theString 
 
 # monitor_counter
 # sample_rotation

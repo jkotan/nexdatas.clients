@@ -293,11 +293,11 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
 #                +' "start_time":"2012-11-14T14:05:23.2344-0200"' \
 
         
-        self.nexusWriter.TheXMLSettings=xml
+        self.nexusWriter.XMLSettings=xml
 
 
 
-        self.nexusWriter.TheJSONRecord = theString
+        self.nexusWriter.JSONRecord = theString
         print "opening the entry"
         self.nexusWriter.OpenEntry()
 
@@ -346,7 +346,7 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
         
 
 
-        self.nexusWriter.TheJSONRecord = theString
+        self.nexusWriter.JSONRecord = theString
         print "closing the entry"
         self.nexusWriter.CloseEntry()
         print "closing the H5 file"

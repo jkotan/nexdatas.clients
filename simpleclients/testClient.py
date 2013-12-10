@@ -69,7 +69,7 @@ def main(i):
         print "opening the H5 file"
         dpx.OpenFile()
 
-        dpx.TheXMLSettings = xml
+        dpx.XMLSettings = xml
 
         print "opening the entry"
         dpx.OpenEntry()

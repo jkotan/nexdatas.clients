@@ -80,8 +80,8 @@ def main():
             print "opening the H5 file"
             dpx.OpenFile()
 
-            dpx.TheXMLSettings = xml
-            dpx.TheJSONRecord = '{"data": {"short_name":"attribute with a datasource"}, "datasources":{"MCLIENT":"ndts.DataSources.ClientSource"}}'
+            dpx.XMLSettings = xml
+            dpx.JSONRecord = '{"data": {"short_name":"attribute with a datasource"}, "datasources":{"MCLIENT":"ndts.DataSources.ClientSource"}}'
 
             print "opening the entry"
             dpx.OpenEntry()

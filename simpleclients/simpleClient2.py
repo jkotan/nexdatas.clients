@@ -63,7 +63,7 @@ def main():
                 
                 xml = open(xmlf, 'r').read()
 
-                dpx.TheXMLSettings = xml
+                dpx.XMLSettings = xml
                 
                 print "opening the entry"
                 dpx.OpenEntry()

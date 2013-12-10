@@ -71,12 +71,12 @@ def main():
             print "opening the H5 file"
             dpx.OpenFile()
 
-            dpx.TheXMLSettings = xml
+            dpx.XMLSettings = xml
             theString = '{"data": {"sample_name":"super sample", "start_time":"2012-11-14T14:05:23.2344-0200",' \
                 +' "end_time":"2012-11-14T17:15:23.4567-0200" '\
                 +'}  }'
   
-            dpx.TheJSONRecord =theString 
+            dpx.JSONRecord =theString 
 
             print "opening the entry"
             dpx.OpenEntry()
