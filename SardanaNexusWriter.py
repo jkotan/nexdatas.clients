@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-## \package ndts SardanaClient
 ## \file SardanaNexusWriter.py
 # Sardana Nexus Writer 
 #
@@ -15,7 +14,7 @@ from optparse import OptionParser
 import PyTango
 import Hasylab
 
-from ndtssardanaclient.nexusWriterDoor import nexusDoor
+from nxssardanaclient.nexusWriterDoor import nexusDoor
 
 
 ## finished flag
@@ -120,7 +119,7 @@ if __name__ == "__main__":
 
     import sys
     from PyQt4.QtGui import QApplication
-    from ndtssardanaclient.SardanaWriterDlg import SardanaWriterDlg
+    from nxssardanaclient.SardanaWriterDlg import SardanaWriterDlg
 
     finished = getFinished(door)
     if options.widget:

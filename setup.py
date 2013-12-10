@@ -15,7 +15,7 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with nexdatas.  If not, see <http://www.gnu.org/licenses/>.
-## \package ndtssardanaclient nexdatas
+## \package nxssardanaclient nexdatas
 ## \file setup.py
 # GUI to create the XML components 
 
@@ -25,7 +25,7 @@ from distutils.command.build import build
 from distutils.command.clean import clean
 
 ## package name
-CLIENT = "ndtssardanaclient"
+CLIENT = "nxssardanaclient"
 ## package instance
 ICLIENT = __import__(CLIENT)
 
@@ -126,10 +126,7 @@ SETUPDATA=dict(
     url = "http://code.google.com/p/nexdatas/",
     platforms= ("Linux"),
     packages=[CLIENT ],
-#    data_files = datas,
     scripts = ['SardanaNexusWriter.py'],
-#    package_data={'ndts': ['TDS']},
-#    long_description= read('README'),
     cmdclass = {"build" : toolBuild, "clean" : toolClean}
 )
 

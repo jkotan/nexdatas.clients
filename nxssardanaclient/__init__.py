@@ -15,10 +15,10 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with nexdatas.  If not, see <http://www.gnu.org/licenses/>.
-## \package ndtsconfigtool nexdatas
-## \file ndtssardanaclient/__init__.py
+## \package nxssardanaclient nexdatas
+## \file nxssardanaclient/__init__.py
 # package constructor
 
 ## version of the application
-__version__ = "1.0.2"
+__version__ = "1.1.0"
 
