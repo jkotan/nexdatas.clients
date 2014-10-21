@@ -109,7 +109,7 @@ def main():
 
 #                +' "end_time":"2012-11-14T17:15:23.4567-0200" '\
  
-            dpx.JSONRecord =theString 
+            dpx.JSONRecord = theString 
 
 # monitor_counter
 # sample_rotation

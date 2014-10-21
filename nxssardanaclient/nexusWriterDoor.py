@@ -226,7 +226,7 @@ class nexusDoor(taurus.core.tango.sardana.macroserver.BaseDoor):
         if PYQT:
             self.emitter.emit(SIGNAL("updateCServer(QString)"), QString(self.cnfdevice))
 
-            #         self.cnfServer.State() == PyTango.DevState.RUNNING:
+            #         self.cnfServer.state() == PyTango.DevState.RUNNING:
             #            self.cnfServer.Init()
         self.cnfServer.Open()
 

@@ -12,7 +12,7 @@ import taurus
 
 from optparse import OptionParser
 import PyTango
-import Hasylab
+import HasyUtils
 
 from nxssardanaclient.nexusWriterDoor import nexusDoor
 
@@ -72,7 +72,7 @@ if __name__ == "__main__":
     (options, args) = parser.parse_args()
     if options.doorName is None:
         ## local door names
-        lst = Hasylab.getLocalDoorNames()
+        lst = HasyUtils.getLocalDoorNames()
         if len(lst) == 1:
             doorName = lst[0]
         else:
