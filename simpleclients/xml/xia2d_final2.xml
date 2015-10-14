@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<definition>
+  <group name="entry1" type="NXentry">
+    <group name="instrument" type="NXinstrument">
+      <group name="detector" type="NXdetector">
+	<field name="data" type="NX_INT32">
+	  <strategy mode="FINAL"/>
+	  <datasource name="xia" type="TANGO">
+	    <record name="MappingData"/>
+	    <device hostname="haspp06.desy.de" member="attribute" name="test/xia/01 " port="10000"/>
+	  </datasource>     
+	  <attribute name="signal" type="NX_UINT32"> 1     </attribute>
+	  <dimensions rank="2">
+	    <dim index="1" value="1"/>
+	    <dim index="2" value="4"/>
+	  </dimensions>
+	</field> 
+      </group>
+    </group>
+  </group>
+</definition>

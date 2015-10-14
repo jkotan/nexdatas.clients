@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<definition>
+  <group type="NXentry" name="entry">
+    <attribute name="postrun" type="NX_CHAR">
+      <strategy mode="INIT"/>
+      <datasource type="PYEVAL">
+	<result>
+	  ds.result = ('data/detector_%03i.tif:%s:')
+	</result>
+      </datasource>
+    </attribute>  
+  </group>
+</definition>

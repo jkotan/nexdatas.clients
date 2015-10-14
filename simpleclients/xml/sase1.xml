@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<definition>
+  <group type="NXentry" name="entry">
+    <attribute name="postrun" type="NX_CHAR">
+      <strategy mode="INIT"/>
+      <datasource type="PYEVAL">
+	<result>
+my = str("e:\\test\\el")
+my2 = my.replace("\\","/")
+ds.result = (my2 + 'data/detector_%03i.tif:%s:')
+	</result>
+      </datasource>
+    </attribute>  
+  </group>
+</definition>

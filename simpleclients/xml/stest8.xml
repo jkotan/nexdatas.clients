@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<definition>
+  <group name="entry1" type="NXentry">
+    <group name="instrument" type="NXinstrument">
+      <group name="source" type="NXsource">
+        <field name="emittance_x" type="NX_FLOAT" units="nm rad">
+          <strategy mode="STEP"/>
+          <datasource name="emittance_x" type="CLIENT">
+            <record name="emittance_x"/>
+          </datasource>
+        </field>
+        <field name="y_pixel_size" type="NX_FLOAT">
+          <strategy mode="STEP"/>
+          <datasource name="p09/motor/exp.01" type="TANGO">
+            <device hostname="haso228k.desy.de" member="attribute" name="p09/motor/exp.01" port="10000" group="CORDS"/>
+            <record name="Position"/>
+          </datasource>
+        </field>
+        <field name="x_pixel_size" type="NX_FLOAT">
+          <strategy mode="STEP"/>
+          <datasource name="p09/motor/exp.02" type="TANGO">
+            <device hostname="haso228k.desy.de" member="attribute" name="p09/motor/exp.02" port="10000" group="CORDS"/>
+            <record name="Position"/>
+          </datasource>
+        </field>
+        <field name="magnitude" type="NX_FLOAT">
+          <strategy mode="STEP"/>
+          <datasource name="p09/motor/exp.02" type="TANGO">
+            <device hostname="haso228k.desy.de" member="attribute" name="p09/motor/exp.02" port="10000" group="CORDS"/>
+            <record name="Magnitude"/>
+          </datasource>
+        </field>
+
+
+      </group>
+    </group>
+  </group>
+</definition>

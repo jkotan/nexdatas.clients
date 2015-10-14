@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<definition>
+  <group name="entry1" type="NXentry">
+    <group name="instrument" type="NXinstrument">
+      <group name="source" type="NXsource">
+        <field name="emittance_x" type="NX_FLOAT" units="nm rad">
+          0.2
+          <strategy mode="STEP"/>
+          <datasource name="emittance_x" type="CLIENT">
+            <record name="emittance_x"/>
+          </datasource>
+        </field>
+      </group>
+    </group>
+  </group>
+</definition>

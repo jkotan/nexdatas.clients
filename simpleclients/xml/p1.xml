@@ -1,0 +1,107 @@
+<?xml version="1.0" ?><definition> 
+ <group name="entry" type="NXentry">  
+  <group name="instrument" type="NXinstrument">   
+   <group name="pilatus300k" type="NXdetector">    
+    <field name="x_pixel_size" type="NX_FLOAT64" units="um">172</field>    
+    <field name="y_pixel_size" type="NX_FLOAT64" units="um">172</field>    
+    <field name="layout" type="NX_CHAR">area</field>    
+    <field name="description" type="NX_CHAR">Pilatus 300k</field>    
+    <field name="data" type="NX_UINT32">     
+     <strategy mode="POSTRUN">collection</strategy>     
+     <attribute name="FileDir" type="NX_CHAR">      
+      <strategy mode="FINAL"/>      
+      <datasource name="P300k_fileDir" type="TANGO">       
+       <record name="FileDir"/>       
+       <device hostname="haspp06" member="attribute" name="p06/pilatus/300k" port="10000"/>       
+      </datasource>     </attribute>     
+     <attribute name="FilePostfix" type="NX_CHAR">      
+      <strategy mode="FINAL"/>      
+      <datasource name="P300k_filePostfix" type="TANGO">       
+       <record name="FilePostfix"/>       
+       <device hostname="haspp06" member="attribute" name="p06/pilatus/300k" port="10000"/>       
+      </datasource>     </attribute>     
+     <attribute name="FilePrefix" type="NX_CHAR">      
+      <strategy mode="FINAL"/>      
+      <datasource name="P300k_filePrefix" type="TANGO">       
+       <record name="FilePrefix"/>       
+       <device hostname="haspp06" member="attribute" name="p06/pilatus/300k" port="10000"/>       
+      </datasource>     </attribute>     
+     <attribute name="FileStartNum" type="NX_CHAR">1</attribute>     
+     <attribute name="LastImageTaken" type="NX_CHAR">      
+      <strategy mode="FINAL"/>      
+      <datasource name="P300k_lastImageTaken" type="TANGO">       
+       <record name="LastImageTaken"/>       
+       <device hostname="haspp06" member="attribute" name="p06/pilatus/300k" port="10000"/>       
+      </datasource>     </attribute>     
+     <attribute name="FileLastNum" type="NX_CHAR">      
+      <strategy mode="FINAL"/>      
+      <datasource name="P300k_fileStartNum" type="TANGO">       
+       <record name="FileStartNum"/>       
+       <device hostname="haspp06" member="attribute" name="p06/pilatus/300k" port="10000"/>       
+      </datasource>     </attribute>     
+     <attribute name="signal" type="NX_UINT">1</attribute>     
+    </field>    
+    <group name="collection" type="NXcollection">     
+     <field name="delay_time" type="NX_FLOAT64" units="s">      
+      <strategy mode="FINAL"/>      
+      <datasource name="P300k_delayTime" type="TANGO">       
+       <record name="DelayTime"/>       
+       <device hostname="haspp06" member="attribute" name="p06/pilatus/300k" port="10000"/>       
+      </datasource>     </field>     
+     <field name="exposure_period" type="NX_FLOAT64" units="s">      
+      <strategy mode="FINAL"/>      
+      <datasource name="P300k_exposurePeriod" type="TANGO">       
+       <record name="ExposurePeriod"/>       
+       <device hostname="haspp06" member="attribute" name="p06/pilatus/300k" port="10000"/>       
+      </datasource>     </field>     
+     <field name="exposure_time" type="NX_FLOAT64" units="s">      
+      <strategy mode="FINAL"/>      
+      <datasource name="P300k_exposureTime" type="TANGO">       
+       <record name="ExposureTime"/>       
+       <device hostname="haspp06" member="attribute" name="p06/pilatus/300k" port="10000"/>       
+      </datasource>     </field>     
+     <field name="nb_frames" type="NX_UINT64">      
+      <strategy mode="FINAL"/>      
+      <datasource name="P300k_nbFrames" type="TANGO">       
+       <record name="NbFrames"/>       
+       <device hostname="haspp06" member="attribute" name="p06/pilatus/300k" port="10000"/>       
+      </datasource>     </field>     
+     <field name="nb_exposures" type="NX_UINT64">      
+      <strategy mode="FINAL"/>      
+      <datasource name="P300k_nbExposures" type="TANGO">       
+       <record name="NbExposures"/>       
+       <device hostname="haspp06" member="attribute" name="p06/pilatus/300k" port="10000"/>       
+      </datasource>     </field>     
+     <field name="postrun" type="NX_CHAR">      
+      <datasource name="P300k_postrun" type="PYEVAL">       
+       <result name="result">
+ds.result = &quot;&quot; + ds.P300k_fileDir + &quot;/&quot; + ds.P300k_filePrefix + &quot;%03i&quot; + ds.P300k_filePostfix + &quot;:1:&quot; +  str(ds.P300k_fileStartNum) </result>       
+ 
+       <datasource name="P300k_fileStartNum" type="TANGO">        
+        <record name="FileStartNum"/>        
+        <device hostname="haspp06" member="attribute" name="p06/pilatus/300k" port="10000"/>        
+       </datasource>       
+ 
+       <datasource name="P300k_fileDir" type="TANGO">        
+        <record name="FileDir"/>        
+        <device hostname="haspp06" member="attribute" name="p06/pilatus/300k" port="10000"/>        
+       </datasource>       
+ 
+       <datasource name="P300k_filePostfix" type="TANGO">        
+        <record name="FilePostfix"/>        
+        <device hostname="haspp06" member="attribute" name="p06/pilatus/300k" port="10000"/>        
+       </datasource>       
+ 
+       <datasource name="P300k_filePrefix" type="TANGO">        
+        <record name="FilePrefix"/>        
+        <device hostname="haspp06" member="attribute" name="p06/pilatus/300k" port="10000"/>        
+       </datasource>      </datasource>      <strategy mode="FINAL"/>      
+     </field>     
+    </group>    
+   </group>   
+  </group>  
+  <group name="data" type="NXdata">   
+   <link name="data" target="NXentry/NXinstrument/pilatus300k:NXdetector/data"/>   
+  </group>  
+ </group> 
+</definition>

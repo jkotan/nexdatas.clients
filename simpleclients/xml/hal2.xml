@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<definition>
+  <group type="NXentry" name="entry1">
+    <group type="NXinstrument" name="instrument">
+      <attribute name ="short_name"> scan instrument </attribute> 
+      <group type="NXdetector" name="detector">
+        <field name="counter1" type="NX_FLOAT" units="">
+          <dimensions rank="1">
+            <dim index="1" value="2048"/>
+          </dimensions>
+          <strategy mode="STEP"/>
+          <datasource name="p09/mca/exp.02" type="TANGO">
+            <device member="attribute" name="p09/mca/exp.02"/>
+            <record name="Data"/>
+          </datasource>
+        </field>
+      </group>
+    </group>
+    <group type="NXdata" name="data">
+      <link target="/NXentry/NXinstrument/NXdetector/counter1" name="counter1">
+        <doc>
+          Link to counter1 in /NXentry/NXinstrument/NXdetector
+        </doc>
+      </link>
+    </group>
+  </group>
+</definition>

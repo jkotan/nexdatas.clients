@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<definition>
+  <group type="NXentry" name="entry">
+    <field name="motor" type="NX_FLOAT">
+      <strategy mode="STEP"/>
+      <datasource type="TANGO" name="TG_exp_mot19">
+	<record name="Position"/>
+	<device port="10000" hostname="haso228k" group="__CLIENT__" member="attribute" name="p09/motor/exp.19"/>
+      </datasource>
+    </field>  
+  </group>
+</definition>

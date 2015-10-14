@@ -1,0 +1,3451 @@
+<?xml version="1.0"?>
+<!--
+ converted from haspp02ch1a:/home/experiment/online_dir/online.xml 
+--> 
+<hw>
+<device>
+ <name>eurotherm</name>
+ <type>type_tango</type>
+ <module>module_tango</module>
+ <device>p02/eurotherm2408/ch1a.01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <!-- +++ not yet converted to Sardana +++ -->
+</device>
+<device>
+ <name>antonpaar</name>
+ <type>type_tango</type>
+ <module>module_tango</module>
+ <device>p02/eurotherm2604/01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <!-- +++ not yet converted to Sardana +++ -->
+</device>
+<device>
+ <name>gpib</name>
+ <type>type_tango</type>
+ <module>module_tango</module>
+ <device>p02/gpib/eh1.1</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <!-- +++ not yet converted to Sardana +++ -->
+</device>
+<device>
+ <name>pe_detector</name>
+ <type>type_tango</type>
+ <module>module_tango</module>
+ <device>p02/pedetector/xrd.01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <!-- +++ not yet converted to Sardana +++ -->
+</device>
+<device>
+ <name>slt1vgap</name>
+ <type>stepping_motor</type>
+ <module>spk</module>
+ <device>p02/slt/exp.01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>slt_exp</controller>
+ <channel>1</channel>
+ <rootdevicename>p02/slt/exp</rootdevicename>
+</device>
+<device>
+ <name>slt1voffs</name>
+ <type>stepping_motor</type>
+ <module>spk</module>
+ <device>p02/slt/exp.02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>slt_exp</controller>
+ <channel>2</channel>
+ <rootdevicename>p02/slt/exp</rootdevicename>
+</device>
+<device>
+ <name>slt2left</name>
+ <type>stepping_motor</type>
+ <module>spk</module>
+ <device>p02/slt/exp.03</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>slt_exp</controller>
+ <channel>3</channel>
+ <rootdevicename>p02/slt/exp</rootdevicename>
+</device>
+<device>
+ <name>slt2right</name>
+ <type>stepping_motor</type>
+ <module>spk</module>
+ <device>p02/slt/exp.04</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>slt_exp</controller>
+ <channel>4</channel>
+ <rootdevicename>p02/slt/exp</rootdevicename>
+</device>
+<device>
+ <name>slt2vgap</name>
+ <type>stepping_motor</type>
+ <module>spk</module>
+ <device>p02/slt/exp.05</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>slt_exp</controller>
+ <channel>5</channel>
+ <rootdevicename>p02/slt/exp</rootdevicename>
+</device>
+<device>
+ <name>slt2offs</name>
+ <type>stepping_motor</type>
+ <module>spk</module>
+ <device>p02/slt/exp.06</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>slt_exp</controller>
+ <channel>6</channel>
+ <rootdevicename>p02/slt/exp</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot01</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>1</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot02</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>2</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot03</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.03</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>3</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot04</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.04</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>4</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot05</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.05</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>5</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot06</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.06</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>6</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot07</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.07</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>7</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot08</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.08</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>8</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot09</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.09</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>9</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot10</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.10</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>10</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot11</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.11</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>11</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot12</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.12</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>12</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot13</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.13</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>13</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot14</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.14</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>14</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot15</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.15</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>15</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot16</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.16</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>16</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot17</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.17</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>17</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot18</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.18</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>18</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot19</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.19</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>19</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot20</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.20</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>20</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot21</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.21</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>21</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot22</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.22</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>22</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot23</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.23</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>23</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot24</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.24</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>24</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot25</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.25</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>25</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot26</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.26</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>26</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot27</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.27</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>27</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot28</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.28</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>28</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot29</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.29</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>29</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot30</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.30</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>30</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot31</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.31</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>31</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_mot32</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1a.32</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1a</controller>
+ <channel>32</channel>
+ <rootdevicename>p02/motor/eh1a</rootdevicename>
+</device>
+<device>
+ <name>oh1_adc01</name>
+ <type>adc</type>
+ <module>tip830</module>
+ <device>P02/adc/oh1.01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>tip830_oh1</controller>
+ <channel>1</channel>
+ <rootdevicename>P02/adc/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_adc02</name>
+ <type>adc</type>
+ <module>tip830</module>
+ <device>P02/adc/oh1.02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>tip830_oh1</controller>
+ <channel>2</channel>
+ <rootdevicename>P02/adc/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_adc03</name>
+ <type>adc</type>
+ <module>tip830</module>
+ <device>P02/adc/oh1.03</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>tip830_oh1</controller>
+ <channel>3</channel>
+ <rootdevicename>P02/adc/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_adc04</name>
+ <type>adc</type>
+ <module>tip830</module>
+ <device>P02/adc/oh1.04</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>tip830_oh1</controller>
+ <channel>4</channel>
+ <rootdevicename>P02/adc/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_adc05</name>
+ <type>adc</type>
+ <module>tip830</module>
+ <device>P02/adc/oh1.05</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>tip830_oh1</controller>
+ <channel>5</channel>
+ <rootdevicename>P02/adc/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_adc06</name>
+ <type>adc</type>
+ <module>tip830</module>
+ <device>P02/adc/oh1.06</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>tip830_oh1</controller>
+ <channel>6</channel>
+ <rootdevicename>P02/adc/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_adc07</name>
+ <type>adc</type>
+ <module>tip830</module>
+ <device>P02/adc/oh1.07</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>tip830_oh1</controller>
+ <channel>7</channel>
+ <rootdevicename>P02/adc/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_adc08</name>
+ <type>adc</type>
+ <module>tip830</module>
+ <device>P02/adc/oh1.08</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>tip830_oh1</controller>
+ <channel>8</channel>
+ <rootdevicename>P02/adc/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_dac01</name>
+ <type>dac</type>
+ <module>tip551</module>
+ <device>P02/dac/oh1.01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>tip551_oh1</controller>
+ <channel>1</channel>
+ <rootdevicename>P02/dac/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_dac02</name>
+ <type>dac</type>
+ <module>tip551</module>
+ <device>P02/dac/oh1.02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>tip551_oh1</controller>
+ <channel>2</channel>
+ <rootdevicename>P02/dac/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_dac03</name>
+ <type>dac</type>
+ <module>tip551</module>
+ <device>P02/dac/oh1.03</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>tip551_oh1</controller>
+ <channel>3</channel>
+ <rootdevicename>P02/dac/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_dac04</name>
+ <type>dac</type>
+ <module>tip551</module>
+ <device>P02/dac/oh1.04</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>tip551_oh1</controller>
+ <channel>4</channel>
+ <rootdevicename>P02/dac/oh1</rootdevicename>
+</device>
+<device>
+ <name>eh1b_dac01</name>
+ <type>dac</type>
+ <module>tip551</module>
+ <device>P02/dac/eh1b.01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>tip551_eh1b</controller>
+ <channel>1</channel>
+ <rootdevicename>P02/dac/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_dac02</name>
+ <type>dac</type>
+ <module>tip551</module>
+ <device>P02/dac/eh1b.02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>tip551_eh1b</controller>
+ <channel>2</channel>
+ <rootdevicename>P02/dac/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_dac03</name>
+ <type>dac</type>
+ <module>tip551</module>
+ <device>P02/dac/eh1b.03</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>tip551_eh1b</controller>
+ <channel>3</channel>
+ <rootdevicename>P02/dac/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_dac04</name>
+ <type>dac</type>
+ <module>tip551</module>
+ <device>P02/dac/eh1b.04</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>tip551_eh1b</controller>
+ <channel>4</channel>
+ <rootdevicename>P02/dac/eh1b</rootdevicename>
+</device>
+<device>
+ <name>oh1_ireg01</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.in01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610in_oh1</controller>
+ <channel>1</channel>
+ <rootdevicename>P02/register/oh1.in</rootdevicename>
+</device>
+<device>
+ <name>oh1_ireg02</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.in02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610in_oh1</controller>
+ <channel>2</channel>
+ <rootdevicename>P02/register/oh1.in</rootdevicename>
+</device>
+<device>
+ <name>oh1_ireg03</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.in03</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610in_oh1</controller>
+ <channel>3</channel>
+ <rootdevicename>P02/register/oh1.in</rootdevicename>
+</device>
+<device>
+ <name>oh1_ireg04</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.in04</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610in_oh1</controller>
+ <channel>4</channel>
+ <rootdevicename>P02/register/oh1.in</rootdevicename>
+</device>
+<device>
+ <name>oh1_ireg05</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.in05</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610in_oh1</controller>
+ <channel>5</channel>
+ <rootdevicename>P02/register/oh1.in</rootdevicename>
+</device>
+<device>
+ <name>oh1_ireg06</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.in06</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610in_oh1</controller>
+ <channel>6</channel>
+ <rootdevicename>P02/register/oh1.in</rootdevicename>
+</device>
+<device>
+ <name>oh1_ireg07</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.in07</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610in_oh1</controller>
+ <channel>7</channel>
+ <rootdevicename>P02/register/oh1.in</rootdevicename>
+</device>
+<device>
+ <name>oh1_ireg08</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.in08</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610in_oh1</controller>
+ <channel>8</channel>
+ <rootdevicename>P02/register/oh1.in</rootdevicename>
+</device>
+<device>
+ <name>oh1_ireg09</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.in09</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610in_oh1</controller>
+ <channel>9</channel>
+ <rootdevicename>P02/register/oh1.in</rootdevicename>
+</device>
+<device>
+ <name>oh1_ireg10</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.in10</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610in_oh1</controller>
+ <channel>10</channel>
+ <rootdevicename>P02/register/oh1.in</rootdevicename>
+</device>
+<device>
+ <name>oh1_ireg11</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.in11</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610in_oh1</controller>
+ <channel>11</channel>
+ <rootdevicename>P02/register/oh1.in</rootdevicename>
+</device>
+<device>
+ <name>oh1_ireg12</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.in12</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610in_oh1</controller>
+ <channel>12</channel>
+ <rootdevicename>P02/register/oh1.in</rootdevicename>
+</device>
+<device>
+ <name>oh1_ireg13</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.in13</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610in_oh1</controller>
+ <channel>13</channel>
+ <rootdevicename>P02/register/oh1.in</rootdevicename>
+</device>
+<device>
+ <name>oh1_ireg14</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.in14</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610in_oh1</controller>
+ <channel>14</channel>
+ <rootdevicename>P02/register/oh1.in</rootdevicename>
+</device>
+<device>
+ <name>oh1_ireg15</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.in15</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610in_oh1</controller>
+ <channel>15</channel>
+ <rootdevicename>P02/register/oh1.in</rootdevicename>
+</device>
+<device>
+ <name>oh1_ireg16</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.in16</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610in_oh1</controller>
+ <channel>16</channel>
+ <rootdevicename>P02/register/oh1.in</rootdevicename>
+</device>
+<device>
+ <name>oh1_oreg01</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.out01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610out_oh1</controller>
+ <channel>1</channel>
+ <rootdevicename>P02/register/oh1.out</rootdevicename>
+</device>
+<device>
+ <name>oh1_oreg02</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.out02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610out_oh1</controller>
+ <channel>2</channel>
+ <rootdevicename>P02/register/oh1.out</rootdevicename>
+</device>
+<device>
+ <name>oh1_oreg03</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.out03</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610out_oh1</controller>
+ <channel>3</channel>
+ <rootdevicename>P02/register/oh1.out</rootdevicename>
+</device>
+<device>
+ <name>oh1_oreg04</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.out04</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610out_oh1</controller>
+ <channel>4</channel>
+ <rootdevicename>P02/register/oh1.out</rootdevicename>
+</device>
+<device>
+ <name>oh1_oreg05</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.out05</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610out_oh1</controller>
+ <channel>5</channel>
+ <rootdevicename>P02/register/oh1.out</rootdevicename>
+</device>
+<device>
+ <name>oh1_oreg06</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.out06</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610out_oh1</controller>
+ <channel>6</channel>
+ <rootdevicename>P02/register/oh1.out</rootdevicename>
+</device>
+<device>
+ <name>oh1_oreg07</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.out07</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610out_oh1</controller>
+ <channel>7</channel>
+ <rootdevicename>P02/register/oh1.out</rootdevicename>
+</device>
+<device>
+ <name>oh1_oreg08</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.out08</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610out_oh1</controller>
+ <channel>8</channel>
+ <rootdevicename>P02/register/oh1.out</rootdevicename>
+</device>
+<device>
+ <name>oh1_oreg09</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.out09</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610out_oh1</controller>
+ <channel>9</channel>
+ <rootdevicename>P02/register/oh1.out</rootdevicename>
+</device>
+<device>
+ <name>oh1_oreg10</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.out10</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610out_oh1</controller>
+ <channel>10</channel>
+ <rootdevicename>P02/register/oh1.out</rootdevicename>
+</device>
+<device>
+ <name>oh1_oreg11</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.out11</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610out_oh1</controller>
+ <channel>11</channel>
+ <rootdevicename>P02/register/oh1.out</rootdevicename>
+</device>
+<device>
+ <name>oh1_oreg12</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.out12</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610out_oh1</controller>
+ <channel>12</channel>
+ <rootdevicename>P02/register/oh1.out</rootdevicename>
+</device>
+<device>
+ <name>oh1_oreg13</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.out13</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610out_oh1</controller>
+ <channel>13</channel>
+ <rootdevicename>P02/register/oh1.out</rootdevicename>
+</device>
+<device>
+ <name>oh1_oreg14</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.out14</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610out_oh1</controller>
+ <channel>14</channel>
+ <rootdevicename>P02/register/oh1.out</rootdevicename>
+</device>
+<device>
+ <name>oh1_oreg15</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.out15</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610out_oh1</controller>
+ <channel>15</channel>
+ <rootdevicename>P02/register/oh1.out</rootdevicename>
+</device>
+<device>
+ <name>oh1_oreg16</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>P02/register/oh1.out16</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3610out_oh1</controller>
+ <channel>16</channel>
+ <rootdevicename>P02/register/oh1.out</rootdevicename>
+</device>
+<device>
+ <name>oh1_c01</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>1</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c02</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>2</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c03</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.03</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>3</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c04</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.04</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>4</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c05</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.05</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>5</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c06</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.06</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>6</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c07</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.07</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>7</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c08</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.08</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>8</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c09</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.09</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>9</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c10</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.10</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>10</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c11</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.11</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>11</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c12</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.12</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>12</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c13</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.13</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>13</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c14</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.14</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>14</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c15</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.15</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>15</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c16</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.16</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>16</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c17</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.17</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>17</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c18</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.18</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>18</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c19</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.19</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>19</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c20</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.20</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>20</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c21</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.21</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>21</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c22</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.22</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>22</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c23</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.23</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>23</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c24</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.24</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>24</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c25</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.25</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>25</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c26</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.26</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>26</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c27</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.27</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>27</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c28</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.28</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>28</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c29</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.29</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>29</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c30</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.30</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>30</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c31</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.31</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>31</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_c32</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>P02/counter/oh1.32</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>sis3820_oh1</controller>
+ <channel>32</channel>
+ <rootdevicename>P02/counter/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_t01</name>
+ <type>timer</type>
+ <module>dgg2</module>
+ <device>P02/timer/oh1.01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>dgg2_oh1_01</controller>
+ <channel>1</channel>
+ <rootdevicename>P02/timer/oh1.01</rootdevicename>
+</device>
+<device>
+ <name>oh1_t02</name>
+ <type>timer</type>
+ <module>dgg2</module>
+ <device>P02/timer/oh1.02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>dgg2_oh1_02</controller>
+ <channel>1</channel>
+ <rootdevicename>P02/timer/oh1.02</rootdevicename>
+</device>
+<device>
+ <name>oh1_vfc01</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>P02/vfc/oh1.01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>vfcadc_oh1</controller>
+ <channel>1</channel>
+ <rootdevicename>P02/vfc/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_vfc02</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>P02/vfc/oh1.02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>vfcadc_oh1</controller>
+ <channel>2</channel>
+ <rootdevicename>P02/vfc/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_vfc03</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>P02/vfc/oh1.03</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>vfcadc_oh1</controller>
+ <channel>3</channel>
+ <rootdevicename>P02/vfc/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_vfc04</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>P02/vfc/oh1.04</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>vfcadc_oh1</controller>
+ <channel>4</channel>
+ <rootdevicename>P02/vfc/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_vfc05</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>P02/vfc/oh1.05</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>vfcadc_oh1</controller>
+ <channel>5</channel>
+ <rootdevicename>P02/vfc/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_vfc06</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>P02/vfc/oh1.06</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>vfcadc_oh1</controller>
+ <channel>6</channel>
+ <rootdevicename>P02/vfc/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_vfc07</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>P02/vfc/oh1.07</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>vfcadc_oh1</controller>
+ <channel>7</channel>
+ <rootdevicename>P02/vfc/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_vfc08</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>P02/vfc/oh1.08</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>vfcadc_oh1</controller>
+ <channel>8</channel>
+ <rootdevicename>P02/vfc/oh1</rootdevicename>
+</device>
+<device>
+ <name>eh1a_vfc01</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>P02/vfc/eh1a.01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>vfcadc_eh1a</controller>
+ <channel>1</channel>
+ <rootdevicename>P02/vfc/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_vfc02</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>P02/vfc/eh1a.02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>vfcadc_eh1a</controller>
+ <channel>2</channel>
+ <rootdevicename>P02/vfc/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_vfc03</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>P02/vfc/eh1a.03</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>vfcadc_eh1a</controller>
+ <channel>3</channel>
+ <rootdevicename>P02/vfc/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_vfc04</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>P02/vfc/eh1a.04</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>vfcadc_eh1a</controller>
+ <channel>4</channel>
+ <rootdevicename>P02/vfc/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_vfc05</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>P02/vfc/eh1a.05</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>vfcadc_eh1a</controller>
+ <channel>5</channel>
+ <rootdevicename>P02/vfc/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_vfc06</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>P02/vfc/eh1a.06</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>vfcadc_eh1a</controller>
+ <channel>6</channel>
+ <rootdevicename>P02/vfc/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_vfc07</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>P02/vfc/eh1a.07</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>vfcadc_eh1a</controller>
+ <channel>7</channel>
+ <rootdevicename>P02/vfc/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_vfc08</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>P02/vfc/eh1a.08</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>vfcadc_eh1a</controller>
+ <channel>8</channel>
+ <rootdevicename>P02/vfc/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1b_adc01</name>
+ <type>adc</type>
+ <module>tip830</module>
+ <device>p02/adc/eh1b.01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>tip830_eh1b</controller>
+ <channel>1</channel>
+ <rootdevicename>p02/adc/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_adc02</name>
+ <type>adc</type>
+ <module>tip830</module>
+ <device>p02/adc/eh1b.02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>tip830_eh1b</controller>
+ <channel>2</channel>
+ <rootdevicename>p02/adc/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_adc03</name>
+ <type>adc</type>
+ <module>tip830</module>
+ <device>p02/adc/eh1b.03</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>tip830_eh1b</controller>
+ <channel>3</channel>
+ <rootdevicename>p02/adc/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_adc04</name>
+ <type>adc</type>
+ <module>tip830</module>
+ <device>p02/adc/eh1b.04</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>tip830_eh1b</controller>
+ <channel>4</channel>
+ <rootdevicename>p02/adc/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_adc05</name>
+ <type>adc</type>
+ <module>tip830</module>
+ <device>p02/adc/eh1b.05</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>tip830_eh1b</controller>
+ <channel>5</channel>
+ <rootdevicename>p02/adc/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_adc06</name>
+ <type>adc</type>
+ <module>tip830</module>
+ <device>p02/adc/eh1b.06</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>tip830_eh1b</controller>
+ <channel>6</channel>
+ <rootdevicename>p02/adc/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_adc07</name>
+ <type>adc</type>
+ <module>tip830</module>
+ <device>p02/adc/eh1b.07</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>tip830_eh1b</controller>
+ <channel>7</channel>
+ <rootdevicename>p02/adc/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_adc08</name>
+ <type>adc</type>
+ <module>tip830</module>
+ <device>p02/adc/eh1b.08</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>tip830_eh1b</controller>
+ <channel>8</channel>
+ <rootdevicename>p02/adc/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_vfc01</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>p02/vfc/eh1b.01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>vfcadc_eh1b</controller>
+ <channel>1</channel>
+ <rootdevicename>p02/vfc/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_vfc02</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>p02/vfc/eh1b.02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>vfcadc_eh1b</controller>
+ <channel>2</channel>
+ <rootdevicename>p02/vfc/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_vfc03</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>p02/vfc/eh1b.03</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>vfcadc_eh1b</controller>
+ <channel>3</channel>
+ <rootdevicename>p02/vfc/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_vfc04</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>p02/vfc/eh1b.04</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>vfcadc_eh1b</controller>
+ <channel>4</channel>
+ <rootdevicename>p02/vfc/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_vfc05</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>p02/vfc/eh1b.05</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>vfcadc_eh1b</controller>
+ <channel>5</channel>
+ <rootdevicename>p02/vfc/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_vfc06</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>p02/vfc/eh1b.06</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>vfcadc_eh1b</controller>
+ <channel>6</channel>
+ <rootdevicename>p02/vfc/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_vfc07</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>p02/vfc/eh1b.07</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>vfcadc_eh1b</controller>
+ <channel>7</channel>
+ <rootdevicename>p02/vfc/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_vfc08</name>
+ <type>adc</type>
+ <module>vfcadc</module>
+ <device>p02/vfc/eh1b.08</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>vfcadc_eh1b</controller>
+ <channel>8</channel>
+ <rootdevicename>p02/vfc/eh1b</rootdevicename>
+</device>
+<device>
+ <name>oh1_mot17</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>P02/motor/oh1.17</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>omsvme58_oh1</controller>
+ <channel>17</channel>
+ <rootdevicename>P02/motor/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_mot18</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>P02/motor/oh1.18</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>omsvme58_oh1</controller>
+ <channel>18</channel>
+ <rootdevicename>P02/motor/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_mot19</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>P02/motor/oh1.19</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>omsvme58_oh1</controller>
+ <channel>19</channel>
+ <rootdevicename>P02/motor/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_mot20</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>P02/motor/oh1.20</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>omsvme58_oh1</controller>
+ <channel>20</channel>
+ <rootdevicename>P02/motor/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_mot21</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>P02/motor/oh1.21</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>omsvme58_oh1</controller>
+ <channel>21</channel>
+ <rootdevicename>P02/motor/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_mot22</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>P02/motor/oh1.22</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>omsvme58_oh1</controller>
+ <channel>22</channel>
+ <rootdevicename>P02/motor/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_mot23</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>P02/motor/oh1.23</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>omsvme58_oh1</controller>
+ <channel>23</channel>
+ <rootdevicename>P02/motor/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_mot24</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>P02/motor/oh1.24</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>omsvme58_oh1</controller>
+ <channel>24</channel>
+ <rootdevicename>P02/motor/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_mot25</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>P02/motor/oh1.25</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>omsvme58_oh1</controller>
+ <channel>25</channel>
+ <rootdevicename>P02/motor/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_mot26</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>P02/motor/oh1.26</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>omsvme58_oh1</controller>
+ <channel>26</channel>
+ <rootdevicename>P02/motor/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_mot27</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>P02/motor/oh1.27</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>omsvme58_oh1</controller>
+ <channel>27</channel>
+ <rootdevicename>P02/motor/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_mot28</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>P02/motor/oh1.28</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>omsvme58_oh1</controller>
+ <channel>28</channel>
+ <rootdevicename>P02/motor/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_mot29</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>P02/motor/oh1.29</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>omsvme58_oh1</controller>
+ <channel>29</channel>
+ <rootdevicename>P02/motor/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_mot30</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>P02/motor/oh1.30</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>omsvme58_oh1</controller>
+ <channel>30</channel>
+ <rootdevicename>P02/motor/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_mot31</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>P02/motor/oh1.31</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>omsvme58_oh1</controller>
+ <channel>31</channel>
+ <rootdevicename>P02/motor/oh1</rootdevicename>
+</device>
+<device>
+ <name>oh1_mot32</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>P02/motor/oh1.32</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02oh1</pool>
+ <controller>omsvme58_oh1</controller>
+ <channel>32</channel>
+ <rootdevicename>P02/motor/oh1</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c01</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>1</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c02</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>2</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c03</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.03</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>3</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c04</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.04</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>4</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c05</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.05</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>5</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c06</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.06</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>6</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c07</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.07</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>7</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c08</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.08</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>8</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c09</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.09</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>9</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c10</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.10</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>10</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c11</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.11</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>11</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c12</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.12</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>12</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c13</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.13</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>13</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c14</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.14</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>14</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c15</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.15</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>15</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c16</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.16</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>16</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c17</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.17</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>17</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c18</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.18</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>18</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c19</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.19</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>19</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c20</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.20</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>20</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c21</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.21</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>21</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c22</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.22</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>22</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c23</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.23</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>23</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c24</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.24</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>24</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c25</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.25</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>25</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c26</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.26</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>26</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c27</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.27</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>27</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c28</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.28</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>28</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c29</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.29</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>29</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c30</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.30</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>30</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c31</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.31</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>31</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_c32</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1a.32</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1a</controller>
+ <channel>32</channel>
+ <rootdevicename>p02/counter/eh1a</rootdevicename>
+</device>
+<device>
+ <name>eh1a_t01</name>
+ <type>timer</type>
+ <module>dgg2</module>
+ <device>p02/timer/eh1a.01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>dgg2_eh1a_01</controller>
+ <channel>1</channel>
+ <rootdevicename>p02/timer/eh1a.01</rootdevicename>
+</device>
+<device>
+ <name>eh1a_t02</name>
+ <type>timer</type>
+ <module>dgg2</module>
+ <device>p02/timer/eh1a.02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>dgg2_eh1a_02</controller>
+ <channel>1</channel>
+ <rootdevicename>p02/timer/eh1a.02</rootdevicename>
+</device>
+<device>
+ <name>eh1b_t01</name>
+ <type>timer</type>
+ <module>dgg2</module>
+ <device>p02/timer/eh1b.01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>dgg2_eh1b_01</controller>
+ <channel>1</channel>
+ <rootdevicename>p02/timer/eh1b.01</rootdevicename>
+</device>
+<device>
+ <name>eh1b_t02</name>
+ <type>timer</type>
+ <module>dgg2</module>
+ <device>p02/timer/eh1b.02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>dgg2_eh1b_02</controller>
+ <channel>1</channel>
+ <rootdevicename>p02/timer/eh1b.02</rootdevicename>
+</device>
+<device>
+ <name>eh1b_mot01</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1b.01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1b</controller>
+ <channel>1</channel>
+ <rootdevicename>p02/motor/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_mot02</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1b.02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1b</controller>
+ <channel>2</channel>
+ <rootdevicename>p02/motor/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_mot03</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1b.03</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1b</controller>
+ <channel>3</channel>
+ <rootdevicename>p02/motor/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_mot04</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1b.04</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1b</controller>
+ <channel>4</channel>
+ <rootdevicename>p02/motor/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_mot05</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1b.05</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1b</controller>
+ <channel>5</channel>
+ <rootdevicename>p02/motor/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_mot06</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1b.06</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1b</controller>
+ <channel>6</channel>
+ <rootdevicename>p02/motor/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_mot07</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1b.07</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1b</controller>
+ <channel>7</channel>
+ <rootdevicename>p02/motor/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_mot08</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1b.08</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1b</controller>
+ <channel>8</channel>
+ <rootdevicename>p02/motor/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_mot09</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1b.09</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1b</controller>
+ <channel>9</channel>
+ <rootdevicename>p02/motor/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_mot10</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1b.10</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1b</controller>
+ <channel>10</channel>
+ <rootdevicename>p02/motor/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_mot11</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1b.11</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1b</controller>
+ <channel>11</channel>
+ <rootdevicename>p02/motor/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_mot12</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1b.12</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1b</controller>
+ <channel>12</channel>
+ <rootdevicename>p02/motor/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_mot13</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1b.13</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1b</controller>
+ <channel>13</channel>
+ <rootdevicename>p02/motor/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_mot14</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1b.14</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1b</controller>
+ <channel>14</channel>
+ <rootdevicename>p02/motor/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_mot15</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1b.15</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1b</controller>
+ <channel>15</channel>
+ <rootdevicename>p02/motor/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_mot16</name>
+ <type>stepping_motor</type>
+ <module>oms58</module>
+ <device>p02/motor/eh1b.16</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>omsvme58_eh1b</controller>
+ <channel>16</channel>
+ <rootdevicename>p02/motor/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1a_ireg01</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.in01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610in_eh1a</controller>
+ <channel>1</channel>
+ <rootdevicename>p02/register/eh1a.in</rootdevicename>
+</device>
+<device>
+ <name>eh1a_ireg02</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.in02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610in_eh1a</controller>
+ <channel>2</channel>
+ <rootdevicename>p02/register/eh1a.in</rootdevicename>
+</device>
+<device>
+ <name>eh1a_ireg03</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.in03</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610in_eh1a</controller>
+ <channel>3</channel>
+ <rootdevicename>p02/register/eh1a.in</rootdevicename>
+</device>
+<device>
+ <name>eh1a_ireg04</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.in04</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610in_eh1a</controller>
+ <channel>4</channel>
+ <rootdevicename>p02/register/eh1a.in</rootdevicename>
+</device>
+<device>
+ <name>eh1a_ireg05</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.in05</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610in_eh1a</controller>
+ <channel>5</channel>
+ <rootdevicename>p02/register/eh1a.in</rootdevicename>
+</device>
+<device>
+ <name>eh1a_ireg06</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.in06</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610in_eh1a</controller>
+ <channel>6</channel>
+ <rootdevicename>p02/register/eh1a.in</rootdevicename>
+</device>
+<device>
+ <name>eh1a_ireg07</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.in07</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610in_eh1a</controller>
+ <channel>7</channel>
+ <rootdevicename>p02/register/eh1a.in</rootdevicename>
+</device>
+<device>
+ <name>eh1a_ireg08</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.in08</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610in_eh1a</controller>
+ <channel>8</channel>
+ <rootdevicename>p02/register/eh1a.in</rootdevicename>
+</device>
+<device>
+ <name>eh1a_ireg09</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.in09</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610in_eh1a</controller>
+ <channel>9</channel>
+ <rootdevicename>p02/register/eh1a.in</rootdevicename>
+</device>
+<device>
+ <name>eh1a_ireg10</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.in10</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610in_eh1a</controller>
+ <channel>10</channel>
+ <rootdevicename>p02/register/eh1a.in</rootdevicename>
+</device>
+<device>
+ <name>eh1a_ireg11</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.in11</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610in_eh1a</controller>
+ <channel>11</channel>
+ <rootdevicename>p02/register/eh1a.in</rootdevicename>
+</device>
+<device>
+ <name>eh1a_ireg12</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.in12</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610in_eh1a</controller>
+ <channel>12</channel>
+ <rootdevicename>p02/register/eh1a.in</rootdevicename>
+</device>
+<device>
+ <name>eh1a_ireg13</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.in13</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610in_eh1a</controller>
+ <channel>13</channel>
+ <rootdevicename>p02/register/eh1a.in</rootdevicename>
+</device>
+<device>
+ <name>eh1a_ireg14</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.in14</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610in_eh1a</controller>
+ <channel>14</channel>
+ <rootdevicename>p02/register/eh1a.in</rootdevicename>
+</device>
+<device>
+ <name>eh1a_ireg15</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.in15</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610in_eh1a</controller>
+ <channel>15</channel>
+ <rootdevicename>p02/register/eh1a.in</rootdevicename>
+</device>
+<device>
+ <name>eh1a_ireg16</name>
+ <type>input_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.in16</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610in_eh1a</controller>
+ <channel>16</channel>
+ <rootdevicename>p02/register/eh1a.in</rootdevicename>
+</device>
+<device>
+ <name>eh1a_oreg01</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.out01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610out_eh1a</controller>
+ <channel>1</channel>
+ <rootdevicename>p02/register/eh1a.out</rootdevicename>
+</device>
+<device>
+ <name>eh1a_oreg02</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.out02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610out_eh1a</controller>
+ <channel>2</channel>
+ <rootdevicename>p02/register/eh1a.out</rootdevicename>
+</device>
+<device>
+ <name>eh1a_oreg03</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.out03</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610out_eh1a</controller>
+ <channel>3</channel>
+ <rootdevicename>p02/register/eh1a.out</rootdevicename>
+</device>
+<device>
+ <name>eh1a_oreg04</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.out04</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610out_eh1a</controller>
+ <channel>4</channel>
+ <rootdevicename>p02/register/eh1a.out</rootdevicename>
+</device>
+<device>
+ <name>eh1a_oreg05</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.out05</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610out_eh1a</controller>
+ <channel>5</channel>
+ <rootdevicename>p02/register/eh1a.out</rootdevicename>
+</device>
+<device>
+ <name>eh1a_oreg06</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.out06</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610out_eh1a</controller>
+ <channel>6</channel>
+ <rootdevicename>p02/register/eh1a.out</rootdevicename>
+</device>
+<device>
+ <name>eh1a_oreg07</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.out07</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610out_eh1a</controller>
+ <channel>7</channel>
+ <rootdevicename>p02/register/eh1a.out</rootdevicename>
+</device>
+<device>
+ <name>eh1a_oreg08</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.out08</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610out_eh1a</controller>
+ <channel>8</channel>
+ <rootdevicename>p02/register/eh1a.out</rootdevicename>
+</device>
+<device>
+ <name>eh1a_oreg09</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.out09</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610out_eh1a</controller>
+ <channel>9</channel>
+ <rootdevicename>p02/register/eh1a.out</rootdevicename>
+</device>
+<device>
+ <name>eh1a_oreg10</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.out10</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610out_eh1a</controller>
+ <channel>10</channel>
+ <rootdevicename>p02/register/eh1a.out</rootdevicename>
+</device>
+<device>
+ <name>eh1a_oreg11</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.out11</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610out_eh1a</controller>
+ <channel>11</channel>
+ <rootdevicename>p02/register/eh1a.out</rootdevicename>
+</device>
+<device>
+ <name>eh1a_oreg12</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.out12</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610out_eh1a</controller>
+ <channel>12</channel>
+ <rootdevicename>p02/register/eh1a.out</rootdevicename>
+</device>
+<device>
+ <name>eh1a_oreg13</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.out13</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610out_eh1a</controller>
+ <channel>13</channel>
+ <rootdevicename>p02/register/eh1a.out</rootdevicename>
+</device>
+<device>
+ <name>eh1a_oreg14</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.out14</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610out_eh1a</controller>
+ <channel>14</channel>
+ <rootdevicename>p02/register/eh1a.out</rootdevicename>
+</device>
+<device>
+ <name>eh1a_oreg15</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.out15</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610out_eh1a</controller>
+ <channel>15</channel>
+ <rootdevicename>p02/register/eh1a.out</rootdevicename>
+</device>
+<device>
+ <name>eh1a_oreg16</name>
+ <type>output_register</type>
+ <module>sis3610</module>
+ <device>p02/register/eh1a.out16</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3610out_eh1a</controller>
+ <channel>16</channel>
+ <rootdevicename>p02/register/eh1a.out</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c01</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.01</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>1</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c02</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.02</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>2</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c03</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.03</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>3</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c04</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.04</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>4</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c05</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.05</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>5</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c06</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.06</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>6</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c07</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.07</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>7</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c08</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.08</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>8</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c09</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.09</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>9</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c10</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.10</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>10</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c11</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.11</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>11</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c12</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.12</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>12</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c13</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.13</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>13</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c14</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.14</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>14</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c15</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.15</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>15</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c16</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.16</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>16</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c17</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.17</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>17</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c18</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.18</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>18</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c19</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.19</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>19</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c20</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.20</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>20</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c21</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.21</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>21</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c22</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.22</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>22</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c23</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.23</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>23</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c24</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.24</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>24</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c25</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.25</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>25</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c26</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.26</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>26</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c27</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.27</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>27</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c28</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.28</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>28</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c29</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.29</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>29</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c30</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.30</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>30</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c31</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.31</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>31</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<device>
+ <name>eh1b_c32</name>
+ <type>counter</type>
+ <module>sis3820</module>
+ <device>p02/counter/eh1b.32</device>
+ <control>tango</control>
+ <hostname>haspp02oh1:10000</hostname>
+ <pool>pool_haspp02ch1a</pool>
+ <controller>sis3820_eh1b</controller>
+ <channel>32</channel>
+ <rootdevicename>p02/counter/eh1b</rootdevicename>
+</device>
+<!-- converter version 24.01.2013 -->
+</hw>

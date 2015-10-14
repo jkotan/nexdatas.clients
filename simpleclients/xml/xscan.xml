@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<definition>
+  <group name="entry1" type="NXentry">
+    <group name="instrument" type="NXinstrument">
+      <group name="detector" type="NXdetector">
+        <field name="mca" type="NX_FLOAT" units="">
+          <dimensions rank="1">
+            <dim index="1" value="10"/>
+          </dimensions>
+	  11 23 4 5 6 7 7 8 9 0
+        </field>
+        <field name="pcd" type="NX_FLOAT" units="">
+          <dimensions rank="2">
+            <dim index="1" value="4"/>
+            <dim index="2" value="3"/>
+          </dimensions>
+	  11 12 13 
+	  21 22 23
+	  31 32 33
+	  41 42 43
+        </field>
+      </group>
+    </group>
+  </group>
+</definition>

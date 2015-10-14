@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<definition>
+  <group name="entry1" type="NXentry">
+    <group name="instrument" type="NXinstrument">
+      <group name="detector" type="NXdetector">
+        <field name="mca" type="NX_INT" units="">
+          <dimensions rank="1">
+            <dim index="1" value="2048"/>
+          </dimensions>
+          <strategy mode="STEP"/>
+          <datasource name="p09/mca/exp.02" type="TANGO">
+            <device member="attribute" name="p09/mca/exp.02"/>
+            <record name="Data"/>
+          </datasource>
+        </field>
+      </group>
+    </group>
+    <group name="data" type="NXdata">
+      <link name="data" target="/NXentry/NXinstrument/NXdetector/mca">
+        <doc>
+          Link to mca in /NXentry/NXinstrument/NXdetector
+        </doc>
+      </link>
+    </group>
+  </group>
+</definition>

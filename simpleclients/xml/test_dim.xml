@@ -1,0 +1,92 @@
+<?xml version="1.0" ?><definition> 
+ <group name="entry" type="NXentry">  
+  <group name="sample" type="NXsample">   
+   <field name="name" type="NX_CHAR">    
+    <datasource name="sample_name" type="CLIENT">     
+     <record name="sample_name"/>     
+     <doc>Data source providing the name of the sample.</doc>     
+    </datasource>    
+    <strategy compression="false" mode="INIT"/>    
+   </field>   
+   <field name="chemical_formula" type="NX_CHAR">    
+    <strategy mode="INIT"/>    
+    <datasource name="chemical_formula" type="CLIENT">     
+     <record name="chemical_formula"/>     
+    </datasource>   </field>   
+  </group>  
+  <field name="experiment_identifier" type="NX_CHAR">   
+   <doc>Beamtime ID. From this ID everything else can be derived from the DESY databases including the Proposal as well as the scientists performing the experiment, the local contact, and so on.
+
+The beamtime ID at DESY is an 8 digit number.R</doc>   
+   <strategy mode="INIT"/>   
+   <datasource name="beamtime_id" type="CLIENT">    
+    <record name="beamtime_id"/>    
+   </datasource>  </field>  
+  <field name="start_time" type="NX_DATE_TIME">   
+   <doc>time stamp when the experiment has started.</doc>   
+   <strategy mode="INIT"/>   
+   <datasource name="start_time" type="CLIENT">    
+    <record name="start_time"/>    
+    <doc>The start time is provided by the control client.</doc>    
+   </datasource>  </field>  
+  <field name="end_time" type="NX_DATE_TIME">   
+   <doc>end time - timestamp when the experiment stopped.</doc>   
+   <strategy mode="FINAL"/>   
+   <datasource name="end_time" type="CLIENT">    
+    <record name="end_time"/>    
+    <doc>The end time is provided by the client after the experiment is finished.</doc>    
+   </datasource>  </field>  
+  <group name="control" type="NXmonitor">   
+   <field name="mode" type="NX_CHAR">    monitor    <strategy mode="INIT"/>    
+   </field>   
+   <field name="data" type="NX_FLOAT">    
+    <doc>monitor data</doc>    
+    <strategy mode="STEP"/>    1   </field>   
+  </group>  
+  <group name="instrument" type="NXinstrument">   
+   <group name="source" type="NXsource">    
+    <doc>generic description of the PETRA III storage ring</doc>    
+    <field name="name" short_name="PETRAIII" type="NX_CHAR">     
+     <strategy mode="INIT"/>     PETRAIII    </field>    
+    <field name="type" type="NX_CHAR">     Synchrotron X-ray Source     <strategy mode="INIT"/>     
+    </field>    
+    <field name="probe" type="NX_CHAR">     x-ray     <strategy mode="INIT"/>     
+    </field>    
+   </group>   
+   <field name="name" short_name="P02" type="NX_CHAR">    Hard X-Ray Diffraction Beamlines for Time Resolved Studies    <strategy mode="INIT"/>    
+   </field>   
+  </group>  
+  <field name="program_name" scan_command="ascan exp_mot04 0.0 1.0 10 0.1" type="NX_CHAR">   NexDaTaS   <attribute name="version" type="NX_CHAR">    
+    <strategy mode="INIT"/>    
+    <datasource name="nexdatas_version" type="PYEVAL">     
+     <result name="result">
+from nxswriter import __version__
+ds.result = __version__</result>     
+    </datasource>   </attribute>   
+   <attribute name="configuration" type="NX_CHAR">    
+    <strategy mode="INIT"/>    
+    <datasource name="nexdatas_configuration" type="TANGO">     
+     <record name="Version"/>     
+     <device hostname="haso228k" member="attribute" name="p09/mcs/r228" port="10000"/>     
+    </datasource>   </attribute>   
+  </field>  
+  <field name="title" type="NX_CHAR">   
+   <strategy mode="INIT"/>   
+   <datasource name="title" type="CLIENT">    
+    <record name="title"/>    
+    <doc>experiment descrition</doc>    
+   </datasource>  </field>  
+  <field name="tester" type="NX_INT">   
+   <dimensions rank="1">    
+    <dim index="1" value="$value.TG_exp_c06">     
+     <datasource name="TG_exp_c06" type="TANGO">      
+      <record name="Counts"/>      
+      <device hostname="haso228k.desy.de" member="attribute" name="p09/counter/exp.06" port="10000"/>      
+     </datasource>    <strategy mode="CONFIG"/>      </dim>    
+   </dimensions>   
+   <datasource name="TG_exp_mca01" type="TANGO">    
+    <record name="Data"/>    
+    <device hostname="haspp03" member="attribute" name="p03/mca/exp.01" port="10000"/>    
+   </datasource>   <strategy mode="STEP"/>   
+  </field> </group> 
+</definition>

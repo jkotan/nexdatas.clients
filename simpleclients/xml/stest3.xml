@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<definition>
+  <group name="entry1" type="NXentry">
+    <group name="instrument" type="NXinstrument">
+      <group name="source" type="NXsource">
+        <field name="emittance_x" type="NX_FLOAT" units="nm rad">
+          <strategy mode="STEP"/>
+          <datasource name="emittance_x" type="CLIENT">
+            <record name="emittance_x"/>
+          </datasource>
+        </field>
+
+        <field name="emittance_x_perf" type="NX_FLOAT" units="nm rad">
+          <strategy mode="STEP"/>
+          <datasource name="emittance_x" type="PYEVAL">
+            <datasource name="em" type="CLIENT">
+              <record name="emittance_x"/>
+            </datasource>
+	    <result>
+if ds.em >0.3:
+    ds.result = ds.em + 1	      
+else:
+    ds.result = ds.em + 2
+	    </result>
+          </datasource>
+        </field>
+
+      </group>
+    </group>
+  </group>
+</definition>

@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<definition> 
+ <group name="entry" type="NXentry">  
+  <field name="start_time" type="NX_DATE_TIME">   
+   <doc>    time stamp when the experiment has started.   </doc>   
+   <strategy mode="INIT"/>   
+   <datasource name="start_time" type="CLIENT">    
+    <record name="start_time"/>    
+    <doc>     The start time is provided by the control client.    </doc>    
+   </datasource>  </field>  
+  <field name="end_time" type="NX_DATE_TIME">   
+   <doc>    end time - timestamp when the experiment stopped.   </doc>   
+   <strategy mode="FINAL"/>   
+   <datasource name="end_time" type="CLIENT">    
+    <record name="end_time"/>    
+    <doc>     The end time is provided by the client after the experiment is finished.    </doc>    
+   </datasource>  </field>  
+  <group name="instrument" type="NXinstrument">   
+   <group name="detector" type="NXdetector">    
+    <group name="collection" type="NXcollection">     
+     <field name="motor_name" type="NX_CHAR">      
+      <datasource name="motor_name" type="CLIENT">       
+       <record name="motor_name"/>       
+      </datasource>      <strategy mode="INIT"/>      
+     </field>     
+     <field name="start_pos" type="NX_FLOAT64">      
+      <datasource name="start_pos" type="CLIENT">       
+       <record name="start_pos"/>       
+      </datasource>      <strategy mode="INIT"/>      
+     </field>     
+     <field name="final_pos" type="NX_FLOAT64">      
+      <datasource name="final_pos" type="CLIENT">       
+       <record name="final_pos"/>       
+      </datasource>      <strategy mode="INIT"/>      
+     </field>     
+     <field name="nb_triggers" type="NX_UINT64">      
+      <datasource name="nb_triggers" type="CLIENT">       
+       <record name="nb_triggers"/>       
+      </datasource>      <strategy mode="INIT"/>      
+     </field>     
+     <field name="sample_time" type="NX_FLOAT64">      
+      <datasource name="sample_time" type="CLIENT">       
+       <record name="sample_time"/>       
+      </datasource>      <strategy mode="INIT"/>      
+     </field>     
+     <field name="encoder_pos" type="NX_INT64">      
+      <strategy mode="STEP"/>      
+      <datasource name="encoder_pos" type="CLIENT">       
+       <record name="encoder_pos"/>       
+      </datasource>      <attribute name="axis" type="NX_UINT32">       1      </attribute>      
+     </field>     
+    </group>    
+   </group>   
+  </group>  
+ </group> 
+</definition>

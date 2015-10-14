@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<definition> 
+ <group name="entry" type="NXentry">  
+  <field name="start_time" type="NX_CHAR">   
+   <doc>    time stamp when the experiment has started.   </doc>   
+   <strategy mode="INIT"/>   
+   <datasource name="start_time" type="CLIENT">    
+    <record name="start_time"/>    
+    <doc>     The start time is provided by the control client.    </doc>    
+   </datasource>  </field>  
+ </group> 
+</definition>

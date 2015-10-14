@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<definition>
+  <group name="entry1" type="NXentry">
+    <group name="instrument" type="NXinstrument">
+      <group name="detector" type="NXdetector">
+        <field name="mca" type="NX_FLOAT" units="">
+          <dimensions rank="1">
+            <dim index="1" value="2048"/>
+          </dimensions>
+          <strategy mode="STEP"/>
+          <datasource name="p09/mca/exp.02" type="TANGO">
+            <device member="attribute" name="p09/mca/exp.02"/>
+            <record name="Data"/>
+          </datasource>
+        </field>
+	
+	<field name="comments" type="NX_CHAR">     
+	  <dimensions rank="2"/>     
+	  <strategy mode="INIT"/>     
+	  <datasource name="comments" type="CLIENT">      
+	    <record name="comments"/>      
+	  </datasource>     
+	</field>    
+
+
+
+	<field name="FLDinitno" type="NX_CHAR">     
+	  <dimensions rank="2"/>     
+	  <strategy mode="INIT"/>     
+	  <datasource name="DSnoinit" type="CLIENT">      
+	    <record name="RECnoinit"/>      
+	  </datasource>     
+	</field>    
+
+
+
+	<field name="param" type="NX_CHAR">     
+	  <dimensions rank="2"/>     
+	  <strategy mode="INIT"/>     
+	  <datasource name="param" type="CLIENT">      
+	    <record name="parameters"/>      
+	  </datasource>     
+	</field>    
+      </group>
+    </group>
+  </group>
+</definition>
